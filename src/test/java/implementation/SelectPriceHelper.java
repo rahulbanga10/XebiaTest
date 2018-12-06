@@ -1,7 +1,5 @@
 package implementation;
 
-import junit.framework.Assert;
-import pageObjects.SearchFlightPageObject;
 import pageObjects.SelectPricePageObject;
 
 public class SelectPriceHelper {

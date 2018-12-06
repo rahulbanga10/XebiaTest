@@ -1,16 +1,10 @@
 package stepDefinition;
 
 import static org.junit.Assert.assertTrue;
-
 import org.openqa.selenium.WebDriver;
-
 import cucumber.api.java.en.Then;
-import implementation.SearchFlightHelper;
 import implementation.SelectPriceHelper;
-import junit.framework.Assert;
-import pageObjects.SearchFlightPageObject;
 import pageObjects.SelectPricePageObject;
-import webElementMapper.SearchPageWebElementMapper;
 
 public class SelectPriceDefinition {
 

@@ -1,13 +1,8 @@
 package stepDefinition;
 
-
-import java.util.HashMap;
 import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
-
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import implementation.SearchFlightHelper;
 import implementation.StandarKey;
@@ -18,7 +13,6 @@ public class SearchFlightStepDefinition {
 
 	private WebDriver webDriver;
 	private SearchFlightPageObject searchFlightPageObject;
-	private SearchPageWebElementMapper searchFlightPageWebElementMapper;
 	private SearchFlightHelper searchFlightHelper;
 	private Map<StandarKey,Object> scenarios;
 	
@@ -27,7 +21,7 @@ public class SearchFlightStepDefinition {
 		webDriver=hook.getDriver();
 		scenarios=hook.getScenarioResources();
 		searchFlightPageObject=new SearchFlightPageObject(webDriver);
-		searchFlightPageWebElementMapper= new SearchPageWebElementMapper(searchFlightPageObject);
+		new SearchPageWebElementMapper(searchFlightPageObject);
 		searchFlightHelper=new SearchFlightHelper(searchFlightPageObject);
 	}
 	

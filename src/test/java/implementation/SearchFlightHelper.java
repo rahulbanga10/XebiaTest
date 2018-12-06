@@ -2,13 +2,10 @@ package implementation;
 
 
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Formatter;
 import java.util.Iterator;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
 import extension.GenericError;
 import pageObjects.SearchFlightPageObject;
 
@@ -36,8 +33,8 @@ public class SearchFlightHelper {
 	    	
 	    }
 	    
-	    public void selectDay(String Day) {
-	    	Iterator iterator = searchFlightPageObject.getActiveDates().iterator();
+	    private void selectDay(String Day) {
+	    	Iterator<WebElement> iterator = searchFlightPageObject.getActiveDates().iterator();
 	    	boolean dateFound=false;
 	        while(iterator.hasNext()) {
 	           WebElement ele=(WebElement) iterator.next();
@@ -49,7 +46,8 @@ public class SearchFlightHelper {
 	        }
 	    	if(dateFound==false) {throw new GenericError("Date Not FEnabled");}
 	    }
-	    public void goToFirstEnabledMonth() {
+	    
+	    private void goToFirstEnabledMonth() {
 	    	try{
 	    		while(true) {
 	    		searchFlightPageObject.getPreviousMonthNavigatorButton().click();
@@ -59,7 +57,7 @@ public class SearchFlightHelper {
 	    		}
 	    }
 	    
-	    public void goToNextMonth() {
+	    private void goToNextMonth() {
 	    	try{
 	    		searchFlightPageObject.getNextMonthNavigatorButton().click();
 	    		}catch(Exception e) {
@@ -67,46 +65,43 @@ public class SearchFlightHelper {
 	    		}
 	    }
 	    
-	    public String getMonth() {
+	    private String getMonth() {
 	    	return searchFlightPageObject.getPreviousMonthLabel().getText().trim();
 	    }
 	    
-	    public String getYear() {
+	    private String getYear() {
 	    	return searchFlightPageObject.getPreviousYearLabel().getText().trim();
 	    }
 	    
-	    public String getFutureDateFromCurrentDate(int day) {
+	    private String getFutureDateFromCurrentDate(int day) {
 	    	Formatter fmt = new Formatter();
 	        Calendar cal = Calendar.getInstance();
 	        cal.add(Calendar.DAY_OF_MONTH,day);
-	        
 	        fmt = new Formatter();
 	        fmt.format("%td%tB%tY", cal, cal, cal);
 	        return fmt.toString();
 	    }
 	    
-	    public void setDepartureAirport(String airportCode) {
+	    private void setDepartureAirport(String airportCode) {
 	     	searchFlightPageObject.getDepartureAirportLabel().click();
 	    	searchFlightPageObject.getDepartureAirportLabel().sendKeys(airportCode);
 	    	searchFlightPageObject.getDepartureAirportLabel().sendKeys(Keys.TAB);
 	    	
 	    }
-	    public void setArrivalAirport(String airportCode) {
+	    
+	    private void setArrivalAirport(String airportCode) {
 	    	searchFlightPageObject.getArrivalAirportLabel().click();
 	    	searchFlightPageObject.getArrivalAirportLabel().sendKeys(airportCode);
 	    	searchFlightPageObject.getDepartureAirportLabel().sendKeys(Keys.TAB);
 	    }
 	    
-	    public void selectOneWay() {
+	    private void selectOneWay() {
 	    	searchFlightPageObject.getDepartDatePickerLabel().click();
 	    	searchFlightPageObject.getOneWay().click();
 	    	searchFlightPageObject.getSearchFlightTab().click();
 	    }
-	    public void selectFlightType(String type) {
-	    	//searchFlightPageObject.get
-	    }
 	    
-	    public String getFutureDateFromString(String leavingDate) {
+	    private String getFutureDateFromString(String leavingDate) {
 	    	String date;
 	    	switch(leavingDate) {
 	    	case "one week":
@@ -118,12 +113,12 @@ public class SearchFlightHelper {
 	    	return date;
 	    }
 	    
-	    public void selectDepartureDate(String date) {
+	    private void selectDepartureDate(String date) {
 	    	searchFlightPageObject.getDepartDatePickerLabel().click();
 	    	selectDate(date);	
 	    }
 	    
-	    public void selectArrivalDate(String date) {
+	    private void selectArrivalDate(String date) {
 	    	searchFlightPageObject.getArrivalDatePickerLabel().click();
 	    	selectDate(date);	
 	    }
@@ -135,7 +130,5 @@ public class SearchFlightHelper {
 	    	selectDepartureDate(getFutureDateFromString(leavingDate));
 	    	selectArrivalDate(getFutureDateFromString(leavingDate));
 	    	searchFlightPageObject.getSearchFlightSubmitButton().click();
-	    	
-	    	
 	    }
 }

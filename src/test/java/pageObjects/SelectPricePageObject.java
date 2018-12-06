@@ -7,12 +7,11 @@ public class SelectPricePageObject extends BasePage {
 	
 	public SelectPricePageObject(WebDriver webDriver) {
 		super(webDriver);
-		// TODO Auto-generated constructor stub
 	}
 	
-	public static final String LOWEST_AMOUNT_LABEL="//div[@class='summary']/descendant::*[@class='summary-curr-only']";
-	public static final String LOWEST_AMOUNT_TEXT_LABEL="//div[@class='summary']/descendant::*[@class='details js-summary-holder-content']/h2";
-	public static final String FLIGHT_DEST_ARR_LABEL="//*[@class='masthead-dest-title']";
+	private static final String LOWEST_AMOUNT_LABEL="//div[@class='summary']/descendant::*[@class='summary-curr-only']";
+	private static final String LOWEST_AMOUNT_TEXT_LABEL="//div[@class='summary']/descendant::*[@class='details js-summary-holder-content']/h2";
+	private static final String FLIGHT_DEST_ARR_LABEL="//*[@class='masthead-dest-title']";
 	
 	public WebElement getFlightDestinationAirportCode() {
 		return getElementListByXpath(FLIGHT_DEST_ARR_LABEL).get(0);

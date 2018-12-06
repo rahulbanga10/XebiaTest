@@ -1,0 +1,251 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 544247524,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUPApi()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify API is working",
+        "description": "",
+        "id": "api-testing;verify-api-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4308588764,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I hit api",
+            "match": {
+              "location": "ApiStepDefinition.iHitApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "extension.GenericError: Don\u0027t contain top level elements\r\n\tat implementation.ApiHelper.isContainsTopLevelElements(ApiHelper.java:24)\r\n\tat stepDefinition.ApiStepDefinition.containsTopLevelElements(ApiStepDefinition.java:25)\r\n\tat ✽.response contains top level elements(src/test/java/features/ApiFeature.feature:7)\r\n",
+              "duration": 331831045,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "response contains top level elements",
+            "match": {
+              "location": "ApiStepDefinition.containsTopLevelElements()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Hourly object contains 49",
+            "match": {
+              "arguments": [
+                {
+                  "val": "49",
+                  "offset": 23
+                }
+              ],
+              "location": "ApiStepDefinition.hourlyObjectContains(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Minutely object contains 61",
+            "match": {
+              "arguments": [
+                {
+                  "val": "61",
+                  "offset": 25
+                }
+              ],
+              "location": "ApiStepDefinition.minutelyObjectContains(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Daily object contains 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 22
+                }
+              ],
+              "location": "ApiStepDefinition.dailyObjectContains(Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apiTest"
+          },
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Api Testing",
+    "description": "",
+    "id": "api-testing",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/ApiFeature.feature",
+    "tags": [
+      {
+        "name": "@apiTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20374481136,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Bill wants to travel from DXB to LHR",
+        "description": "",
+        "id": "searchflight;bill-wants-to-travel-from-dxb-to-lhr",
+        "after": [
+          {
+            "result": {
+              "duration": 3257654225,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.flush()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 148763713,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "that Bill has decided to check available flights",
+            "match": {
+              "location": "SearchFlightStepDefinition.checkAvailableFlights()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: Element By.xpath: //button[contains(@class,\u0027cta cta--large cta--primary js-widget-submit\u0027)] not found (tried for 50 second(s) with 5 MILLISECONDS interval)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027RAHUL3147517\u0027, ip: \u0027192.168.70.70\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:51388}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir\u003dC:\\Users\\RAHULB~1\\AppData\\Local\\Temp\\scoped_dir36396_3685}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.110, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: fd7dad9ff70f27b763f2506f93b0de55\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat extension.seleniumFramework.WebElementHelper.waitOnElement(WebElementHelper.java:21)\r\n\tat extension.seleniumFramework.ExtendedWebElement.fetchElement(ExtendedWebElement.java:26)\r\n\tat extension.seleniumFramework.ExtendedWebElement.click(ExtendedWebElement.java:41)\r\n\tat implementation.SearchFlightHelper.searchFight(SearchFlightHelper.java:137)\r\n\tat stepDefinition.SearchFlightStepDefinition.searchFlight(SearchFlightStepDefinition.java:51)\r\n\tat ✽.he looks at a return trip from DXB to LHR leaving one week from now(src/test/java/features/SearchFlight.feature:7)\r\n",
+              "duration": 152100668880,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "he looks at a return trip from DXB to LHR leaving one week from now",
+            "match": {
+              "arguments": [
+                {
+                  "val": "return trip",
+                  "offset": 14
+                },
+                {
+                  "val": "DXB",
+                  "offset": 31
+                },
+                {
+                  "val": "LHR",
+                  "offset": 38
+                },
+                {
+                  "val": "one week",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchFlightStepDefinition.searchFlight(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "he should be shown the cheapest return ticket from DXB to LHR",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DXB",
+                  "offset": 51
+                },
+                {
+                  "val": "LHR",
+                  "offset": 58
+                }
+              ],
+              "location": "SelectPriceDefinition.cheapestFlightShown(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "SearchFlight",
+    "description": "",
+    "id": "searchflight",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/SearchFlight.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

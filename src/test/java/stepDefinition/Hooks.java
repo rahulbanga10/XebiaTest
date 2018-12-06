@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.google.common.collect.Maps;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import drivers.DriverGeneratorFactory;
 import drivers.DriverType;
@@ -34,5 +35,10 @@ public class Hooks {
 	
 	public Map<StandarKey,Object> getScenarioResources(){
 		return scenarioResources;
+	}
+	@After("@tag2")
+	public void flush() {
+		driver.close();
+		driver.quit();
 	}
 }
