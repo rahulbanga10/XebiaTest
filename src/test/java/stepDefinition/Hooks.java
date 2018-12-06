@@ -20,13 +20,14 @@ public class Hooks {
 	@Before("@tag2")
 	public void setUp() {
 		scenarioResources=Maps.newHashMap();
-		driver=DriverGeneratorFactory.getManager(DriverType.CHROME).createDriver();
-		driver.get("https://www.emirates.com/ae/english/");
+		
+		driver=DriverGeneratorFactory.getManager(DriverType.valueOf(System.getProperty("browser").toUpperCase())).createDriver();
+		driver.get(System.getProperty("url"));
 	}
 	
 	@Before("@api")
 	public void setUPApi() {
-		 RestAssured.baseURI = "https://api.darksky.net";
+		 RestAssured.baseURI = System.getProperty("apiEndPoint");
 	}
 	
 	public WebDriver getDriver() {

@@ -14,7 +14,6 @@ public class ApiStepDefinition {
 	}
 	@When("^I hit api$")
 	public void iHitApi() {
-		
 		apiObject.getRequest();
 	}
 	

@@ -1,0 +1,1360 @@
+# Created on 2018-12-06T20:52:10.424
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2018-12-06T20:52:16.381
+Unexpected IOException with stream:     [31mGiven [0m[31mthat Bill has decided to check available flights[0m                   [90m# SearchFlightStepDefinition.checkAvailableFlights()[0m
+
+
+# Created on 2018-12-06T20:52:16.390
+Unexpected IOException with stream:       [31morg.openqa.selenium.TimeoutException: Expected condition failed: Element By.id: tab0 not found (tried for 10 second(s) with 5 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at extension.seleniumFramework.WebElementHelper.waitOnElement(WebElementHelper.java:21)
+	at extension.seleniumFramework.ExtendedWebElement.fetchElement(ExtendedWebElement.java:26)
+	at extension.seleniumFramework.ExtendedWebElement.click(ExtendedWebElement.java:41)
+	at stepDefinition.SearchFlightStepDefinition.checkAvailableFlights(SearchFlightStepDefinition.java:40)
+	at ✽.that Bill has decided to check available flights(src/test/java/features/SearchFlight.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: tab0
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'RAHUL3147517', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at extension.seleniumFramework.WebElementHelper.waitOnElement(WebElementHelper.java:21)
+	at extension.seleniumFramework.ExtendedWebElement.fetchElement(ExtendedWebElement.java:26)
+	at extension.seleniumFramework.ExtendedWebElement.click(ExtendedWebElement.java:41)
+	at stepDefinition.SearchFlightStepDefinition.checkAvailableFlights(SearchFlightStepDefinition.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+[0m
+
+
+# Created on 2018-12-06T20:52:16.391
+Unexpected IOException with stream:     [36mWhen [0m[36mhe looks at a [0m[36m[1mreturn trip[0m[36m from [0m[36m[1mDXB[0m[36m to [0m[36m[1mLHR[0m[36m leaving [0m[36m[1mone week[0m[36m from now[0m [90m# SearchFlightStepDefinition.searchFlight(String,String,String,String)[0m
+
+
+# Created on 2018-12-06T20:52:16.392
+Unexpected IOException with stream:     [36mThen [0m[36mhe should be shown the cheapest return ticket from [0m[36m[1mDXB[0m[36m to [0m[36m[1mLHR[0m       [90m# SelectPriceDefinition.cheapestFlightShown(String,String)[0m
+
+
+# Created on 2018-12-06T20:52:17.327
+Unexpected IOException: 7,1,SearchFlight,Bill wants to travel from DXB to LHR(SearchFlight),null,Expected condition failed: Element By.id: tab0 not found (tried for 10 second(s) with 5 MILLISECONDS interval),null,Expected condition failed: Element By.id: tab0 not found (tried for 10 second(s) with 5 MILLISECONDS interval),Expected condition failed: Element By.id: tab0 not found (tried for 10 second(s) with 5 MILLISECONDS interval),org.openqa.selenium.TimeoutException: Expected condition failed: Element By.id: tab0 not found (tried for 10 second(s) with 5 MILLISECONDS interval)\000ACaused by: org.openqa.selenium.NoSuchElementException: \000ACannot locate an element using By.id: tab0\000AFor documentation on this error\002C please visit: http://seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.4.0'\002C revision: 'unknown'\002C time: 'unknown'\000ASystem info: host: 'RAHUL3147517'\002C ip: '127.0.0.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_161'\000ADriver info: driver.version: unknown\000A
+
+
+# Created on 2018-12-06T20:52:17.366
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.366
+Unexpected IOException with stream: [31mFailed scenarios:[0m
+
+
+# Created on 2018-12-06T20:52:17.367
+Unexpected IOException with stream: [31msrc/test/java/features/ApiFeature.feature:5 [0m
+
+# Created on 2018-12-06T20:52:17.368
+Unexpected IOException with stream: # Verify API is working
+
+
+# Created on 2018-12-06T20:52:17.368
+Unexpected IOException with stream: [31msrc/test/java/features/SearchFlight.feature:5 [0m
+
+# Created on 2018-12-06T20:52:17.369
+Unexpected IOException with stream: # Bill wants to travel from DXB to LHR
+
+
+# Created on 2018-12-06T20:52:17.370
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.371
+Unexpected IOException with stream: 2
+
+# Created on 2018-12-06T20:52:17.372
+Unexpected IOException with stream:  Scenarios (
+
+# Created on 2018-12-06T20:52:17.372
+Unexpected IOException with stream: [31m2 failed[0m
+
+# Created on 2018-12-06T20:52:17.373
+Unexpected IOException with stream: )
+
+
+# Created on 2018-12-06T20:52:17.374
+Unexpected IOException with stream: 8
+
+# Created on 2018-12-06T20:52:17.374
+Unexpected IOException with stream:  Steps (
+
+# Created on 2018-12-06T20:52:17.375
+Unexpected IOException with stream: [31m2 failed[0m
+
+# Created on 2018-12-06T20:52:17.376
+Unexpected IOException with stream: , 
+
+# Created on 2018-12-06T20:52:17.377
+Unexpected IOException with stream: [36m6 skipped[0m
+
+# Created on 2018-12-06T20:52:17.377
+Unexpected IOException with stream: )
+
+
+# Created on 2018-12-06T20:52:17.378
+Unexpected IOException with stream: 0m
+
+# Created on 2018-12-06T20:52:17.380
+Unexpected IOException with stream: 16.857s
+
+
+# Created on 2018-12-06T20:52:17.380
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.381
+Unexpected IOException with stream: java.net.UnknownHostException: api.darksky.net
+
+# Created on 2018-12-06T20:52:17.382
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.382
+Unexpected IOException with stream: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+
+# Created on 2018-12-06T20:52:17.383
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.384
+Unexpected IOException with stream: 	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+
+# Created on 2018-12-06T20:52:17.384
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.386
+Unexpected IOException with stream: 	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+
+# Created on 2018-12-06T20:52:17.386
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.387
+Unexpected IOException with stream: 	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+
+# Created on 2018-12-06T20:52:17.388
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.388
+Unexpected IOException with stream: 	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+
+# Created on 2018-12-06T20:52:17.389
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.390
+Unexpected IOException with stream: 	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+
+# Created on 2018-12-06T20:52:17.391
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.391
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+
+# Created on 2018-12-06T20:52:17.392
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.393
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+
+# Created on 2018-12-06T20:52:17.393
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2122)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.395
+Unexpected IOException with stream: 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+
+# Created on 2018-12-06T20:52:17.411
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.412
+Unexpected IOException with stream: 	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+
+# Created on 2018-12-06T20:52:17.413
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.414
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-12-06T20:52:17.414
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.415
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+# Created on 2018-12-06T20:52:17.415
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.416
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+
+# Created on 2018-12-06T20:52:17.416
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.417
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1525)
+
+# Created on 2018-12-06T20:52:17.417
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.417
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2018-12-06T20:52:17.418
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.418
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2018-12-06T20:52:17.419
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.419
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2018-12-06T20:52:17.419
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.420
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2018-12-06T20:52:17.420
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.421
+Unexpected IOException with stream: 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+# Created on 2018-12-06T20:52:17.421
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.422
+Unexpected IOException with stream: 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+# Created on 2018-12-06T20:52:17.422
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.422
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+
+# Created on 2018-12-06T20:52:17.423
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.423
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+
+# Created on 2018-12-06T20:52:17.423
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.424
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+
+# Created on 2018-12-06T20:52:17.424
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.424
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+
+# Created on 2018-12-06T20:52:17.425
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.425
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+
+# Created on 2018-12-06T20:52:17.426
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.426
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+
+# Created on 2018-12-06T20:52:17.427
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.428
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+
+# Created on 2018-12-06T20:52:17.428
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.429
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+
+# Created on 2018-12-06T20:52:17.429
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.430
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1288)
+
+# Created on 2018-12-06T20:52:17.430
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.431
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2018-12-06T20:52:17.431
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.432
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2018-12-06T20:52:17.432
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.432
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2018-12-06T20:52:17.433
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.433
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2018-12-06T20:52:17.434
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.434
+Unexpected IOException with stream: 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+# Created on 2018-12-06T20:52:17.434
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.435
+Unexpected IOException with stream: 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+# Created on 2018-12-06T20:52:17.435
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.436
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+
+# Created on 2018-12-06T20:52:17.436
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.436
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+
+# Created on 2018-12-06T20:52:17.437
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.437
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+
+# Created on 2018-12-06T20:52:17.437
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.438
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+
+# Created on 2018-12-06T20:52:17.438
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.438
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+
+# Created on 2018-12-06T20:52:17.439
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.439
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-12-06T20:52:17.439
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.440
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+# Created on 2018-12-06T20:52:17.440
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.441
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+
+# Created on 2018-12-06T20:52:17.441
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.441
+Unexpected IOException with stream: 	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+
+# Created on 2018-12-06T20:52:17.442
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.442
+Unexpected IOException with stream: 	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+
+# Created on 2018-12-06T20:52:17.442
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.443
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-12-06T20:52:17.443
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.443
+Unexpected IOException with stream: 	at io.restassured.filter.Filter$filter.call(Unknown Source)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.filter.Filter$filter.call(Unknown Source)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.444
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+
+# Created on 2018-12-06T20:52:17.460
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.460
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+
+# Created on 2018-12-06T20:52:17.461
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.461
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+
+# Created on 2018-12-06T20:52:17.462
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.462
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+
+# Created on 2018-12-06T20:52:17.462
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.463
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+
+# Created on 2018-12-06T20:52:17.463
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.463
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:292)
+
+# Created on 2018-12-06T20:52:17.464
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.464
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
+
+# Created on 2018-12-06T20:52:17.464
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.465
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2018-12-06T20:52:17.465
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.465
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2018-12-06T20:52:17.465
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.466
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2018-12-06T20:52:17.466
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.466
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2018-12-06T20:52:17.467
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.467
+Unexpected IOException with stream: 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+# Created on 2018-12-06T20:52:17.467
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.468
+Unexpected IOException with stream: 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+# Created on 2018-12-06T20:52:17.468
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.468
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+
+# Created on 2018-12-06T20:52:17.468
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.469
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+
+# Created on 2018-12-06T20:52:17.469
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.469
+Unexpected IOException with stream: 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+
+# Created on 2018-12-06T20:52:17.470
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.470
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+
+# Created on 2018-12-06T20:52:17.470
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.471
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+
+# Created on 2018-12-06T20:52:17.471
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.471
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+
+# Created on 2018-12-06T20:52:17.471
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.472
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+
+# Created on 2018-12-06T20:52:17.472
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.473
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+
+# Created on 2018-12-06T20:52:17.473
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.473
+Unexpected IOException with stream: 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+
+# Created on 2018-12-06T20:52:17.474
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.474
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:288)
+
+# Created on 2018-12-06T20:52:17.475
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.475
+Unexpected IOException with stream: 	at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
+
+# Created on 2018-12-06T20:52:17.475
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.476
+Unexpected IOException with stream: 	at implementation.ApiHelper.getRequest(ApiHelper.java:18)
+
+# Created on 2018-12-06T20:52:17.476
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.476
+Unexpected IOException with stream: 	at stepDefinition.ApiStepDefinition.iHitApi(ApiStepDefinition.java:20)
+
+# Created on 2018-12-06T20:52:17.477
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.477
+Unexpected IOException with stream: 	at ✽.I hit api(src/test/java/features/ApiFeature.feature:6)
+
+# Created on 2018-12-06T20:52:17.478
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.478
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.478
+Unexpected IOException with stream: org.openqa.selenium.TimeoutException: Expected condition failed: Element By.id: tab0 not found (tried for 10 second(s) with 5 MILLISECONDS interval)
+
+# Created on 2018-12-06T20:52:17.479
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.479
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+
+# Created on 2018-12-06T20:52:17.479
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.480
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+
+# Created on 2018-12-06T20:52:17.480
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.480
+Unexpected IOException with stream: 	at extension.seleniumFramework.WebElementHelper.waitOnElement(WebElementHelper.java:21)
+
+# Created on 2018-12-06T20:52:17.481
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.481
+Unexpected IOException with stream: 	at extension.seleniumFramework.ExtendedWebElement.fetchElement(ExtendedWebElement.java:26)
+
+# Created on 2018-12-06T20:52:17.482
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.482
+Unexpected IOException with stream: 	at extension.seleniumFramework.ExtendedWebElement.click(ExtendedWebElement.java:41)
+
+# Created on 2018-12-06T20:52:17.482
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.483
+Unexpected IOException with stream: 	at stepDefinition.SearchFlightStepDefinition.checkAvailableFlights(SearchFlightStepDefinition.java:40)
+
+# Created on 2018-12-06T20:52:17.483
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.483
+Unexpected IOException with stream: 	at ✽.that Bill has decided to check available flights(src/test/java/features/SearchFlight.feature:6)
+
+# Created on 2018-12-06T20:52:17.483
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.484
+Unexpected IOException with stream: Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: tab0
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'RAHUL3147517', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+
+# Created on 2018-12-06T20:52:17.484
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.484
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+
+# Created on 2018-12-06T20:52:17.485
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.485
+Unexpected IOException with stream: 	at java.util.Optional.orElseThrow(Optional.java:290)
+
+# Created on 2018-12-06T20:52:17.485
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.485
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+
+# Created on 2018-12-06T20:52:17.486
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.486
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+
+# Created on 2018-12-06T20:52:17.486
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.487
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+
+# Created on 2018-12-06T20:52:17.487
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.487
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+
+# Created on 2018-12-06T20:52:17.487
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.488
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+
+# Created on 2018-12-06T20:52:17.488
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.488
+Unexpected IOException with stream: 	at extension.seleniumFramework.WebElementHelper.waitOnElement(WebElementHelper.java:21)
+
+# Created on 2018-12-06T20:52:17.489
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.489
+Unexpected IOException with stream: 	at extension.seleniumFramework.ExtendedWebElement.fetchElement(ExtendedWebElement.java:26)
+
+# Created on 2018-12-06T20:52:17.489
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.490
+Unexpected IOException with stream: 	at extension.seleniumFramework.ExtendedWebElement.click(ExtendedWebElement.java:41)
+
+# Created on 2018-12-06T20:52:17.490
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.491
+Unexpected IOException with stream: 	at stepDefinition.SearchFlightStepDefinition.checkAvailableFlights(SearchFlightStepDefinition.java:40)
+
+# Created on 2018-12-06T20:52:17.491
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.491
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2018-12-06T20:52:17.491
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.492
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2018-12-06T20:52:17.492
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.492
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2018-12-06T20:52:17.493
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.493
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created on 2018-12-06T20:52:17.493
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.493
+Unexpected IOException with stream: 	at cucumber.runtime.Utils$1.call(Utils.java:32)
+
+# Created on 2018-12-06T20:52:17.494
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.494
+Unexpected IOException with stream: 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+
+# Created on 2018-12-06T20:52:17.495
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.495
+Unexpected IOException with stream: 	at cucumber.runtime.Utils.invoke(Utils.java:26)
+
+# Created on 2018-12-06T20:52:17.495
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.496
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+
+# Created on 2018-12-06T20:52:17.496
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.496
+Unexpected IOException with stream: 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+
+# Created on 2018-12-06T20:52:17.496
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.497
+Unexpected IOException with stream: 	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+
+# Created on 2018-12-06T20:52:17.497
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.497
+Unexpected IOException with stream: 	at cucumber.api.TestStep.run(TestStep.java:83)
+
+# Created on 2018-12-06T20:52:17.498
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.498
+Unexpected IOException with stream: 	at cucumber.api.TestCase.run(TestCase.java:58)
+
+# Created on 2018-12-06T20:52:17.498
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.498
+Unexpected IOException with stream: 	at cucumber.runner.Runner.runPickle(Runner.java:80)
+
+# Created on 2018-12-06T20:52:17.499
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.499
+Unexpected IOException with stream: 	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+
+# Created on 2018-12-06T20:52:17.499
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.499
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+
+# Created on 2018-12-06T20:52:17.500
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.500
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+
+# Created on 2018-12-06T20:52:17.501
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.501
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2018-12-06T20:52:17.501
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.502
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2018-12-06T20:52:17.502
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.502
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2018-12-06T20:52:17.503
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.503
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2018-12-06T20:52:17.503
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.504
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2018-12-06T20:52:17.504
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.504
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2018-12-06T20:52:17.504
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.505
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+
+# Created on 2018-12-06T20:52:17.505
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.505
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+
+# Created on 2018-12-06T20:52:17.506
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.506
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+
+# Created on 2018-12-06T20:52:17.506
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.506
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2018-12-06T20:52:17.507
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.507
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2018-12-06T20:52:17.507
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.508
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2018-12-06T20:52:17.508
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.508
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2018-12-06T20:52:17.508
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.509
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2018-12-06T20:52:17.509
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.509
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException with stream: 
+
+
+# Created on 2018-12-06T20:52:17.511
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,runner.TestRunner,null,null,null
+
+

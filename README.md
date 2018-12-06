@@ -17,8 +17,8 @@ Add Cucumber plugin for feature file.
 
 ## Running the tests
 
-1. To Run From eclise Go To /test/src/test/java/runner/TestRunner.java file. Right click and run as JUnit.
-2. To run from command prompt go to project root directory and use commnad mvn test
+
+1. To run from command prompt go to project root directory and use commnad "mvn test -Pqa"
 
 ### Break down into end to end tests
 

@@ -5,8 +5,9 @@
   <artifactId>test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
     <properties>
-        <test.base.url/>
-        <test.browser/>
+        <url>https://www.emirates.com/ae/english/</url>
+        <apiEndPoint>https://api.darksky.net</apiEndPoint>
+        <browser>chrome</browser>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <surefire.plugin.version>2.20</surefire.plugin.version>
@@ -34,9 +35,10 @@
                 <configuration>
                     <systemPropertyVariables>
                         <!--browser type, default chrome, mandatory-->
-                        <browser.type>${test.browser}</browser.type>
+                        <browser>${browser}</browser>
                         <!--base url, undefined and mandatory-->
-                        <base.url>${test.base.url}</base.url>
+                        <url>${url}</url>
+                        <apiEndPoint>${apiEndPoint}</apiEndPoint>
                         <!--frontend framework used, mandatory-->
                         <framework.type>${frontend.framework.type}</framework.type>
                     </systemPropertyVariables>
@@ -142,4 +144,15 @@
 			<version>1.2</version>
 		</dependency>
     </dependencies>
+    <profiles>
+    <profile>
+    <id>qa</id>
+    <properties>
+    <browser>chrome</browser>
+    <url>https://www.emirates.com/ae/english/</url>
+    <apiEndPoint>https://api.darksky.net</apiEndPoint>
+    
+    </properties>
+    </profile>
+    </profiles>
 </project>

@@ -1,0 +1,9 @@
+#surefire_0
+#Thu Dec 06 21:16:04 IST 2018
+url=https\://www.emirates.com/ae/english/
+framework.type=
+browser=chrome
+user.dir=D\:\\work\\test
+localRepository=C\:\\Users\\rahulbangha\\.m2\\repository
+apiEndPoint=https\://api.darksky.net
+basedir=D\:\\work\\test
