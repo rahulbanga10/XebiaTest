@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 544247524,
+              "duration": 562373753,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4308588764,
+              "duration": 3220827347,
               "status": "passed"
             },
             "line": 6,
@@ -35,9 +35,8 @@
           },
           {
             "result": {
-              "error_message": "extension.GenericError: Don\u0027t contain top level elements\r\n\tat implementation.ApiHelper.isContainsTopLevelElements(ApiHelper.java:24)\r\n\tat stepDefinition.ApiStepDefinition.containsTopLevelElements(ApiStepDefinition.java:25)\r\n\tat ✽.response contains top level elements(src/test/java/features/ApiFeature.feature:7)\r\n",
-              "duration": 331831045,
-              "status": "failed"
+              "duration": 556552516,
+              "status": "passed"
             },
             "line": 7,
             "name": "response contains top level elements",
@@ -48,7 +47,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 46018783,
+              "status": "passed"
             },
             "line": 8,
             "name": "Hourly object contains 49",
@@ -65,7 +65,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 102487744,
+              "status": "passed"
             },
             "line": 9,
             "name": "Minutely object contains 61",
@@ -82,7 +83,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 25986381,
+              "status": "passed"
             },
             "line": 10,
             "name": "Daily object contains 8",
@@ -131,7 +133,7 @@
         "before": [
           {
             "result": {
-              "duration": 20374481136,
+              "duration": 13581349761,
               "status": "passed"
             },
             "match": {
@@ -146,7 +148,7 @@
         "after": [
           {
             "result": {
-              "duration": 3257654225,
+              "duration": 2990919898,
               "status": "passed"
             },
             "match": {
@@ -159,7 +161,7 @@
         "steps": [
           {
             "result": {
-              "duration": 148763713,
+              "duration": 137687363,
               "status": "passed"
             },
             "line": 6,
@@ -171,9 +173,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: Element By.xpath: //button[contains(@class,\u0027cta cta--large cta--primary js-widget-submit\u0027)] not found (tried for 50 second(s) with 5 MILLISECONDS interval)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027RAHUL3147517\u0027, ip: \u0027192.168.70.70\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:51388}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir\u003dC:\\Users\\RAHULB~1\\AppData\\Local\\Temp\\scoped_dir36396_3685}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.110, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: fd7dad9ff70f27b763f2506f93b0de55\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat extension.seleniumFramework.WebElementHelper.waitOnElement(WebElementHelper.java:21)\r\n\tat extension.seleniumFramework.ExtendedWebElement.fetchElement(ExtendedWebElement.java:26)\r\n\tat extension.seleniumFramework.ExtendedWebElement.click(ExtendedWebElement.java:41)\r\n\tat implementation.SearchFlightHelper.searchFight(SearchFlightHelper.java:137)\r\n\tat stepDefinition.SearchFlightStepDefinition.searchFlight(SearchFlightStepDefinition.java:51)\r\n\tat ✽.he looks at a return trip from DXB to LHR leaving one week from now(src/test/java/features/SearchFlight.feature:7)\r\n",
-              "duration": 152100668880,
-              "status": "failed"
+              "duration": 39654803221,
+              "status": "passed"
             },
             "line": 7,
             "name": "he looks at a return trip from DXB to LHR leaving one week from now",
@@ -202,7 +203,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 392420896,
+              "status": "passed"
             },
             "line": 8,
             "name": "he should be shown the cheapest return ticket from DXB to LHR",

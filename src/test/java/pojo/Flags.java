@@ -5,10 +5,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(value = { "nearest-station" })
 public class Flags {
 
     private List<String> sources = null;
-    private Double nearestStation;
+    @JsonIgnore
+    private Double neareststation;
     private String units;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -21,11 +26,11 @@ public class Flags {
     }
 
     public Double getNearestStation() {
-        return nearestStation;
+        return neareststation;
     }
 
-    public void setNearestStation(Double nearestStation) {
-        this.nearestStation = nearestStation;
+    public void setNearestStation(Double neareststation) {
+        this.neareststation = neareststation;
     }
 
     public String getUnits() {

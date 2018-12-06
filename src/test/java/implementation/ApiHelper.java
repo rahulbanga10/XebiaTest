@@ -21,6 +21,7 @@ public class ApiHelper {
 	public boolean isContainsTopLevelElements() {
 		if(response.getStatusCode()==200) {
 		ResponseBody body = response.getBody();
+		System.out.println(body.asString());
 		try{body.as(BasePOJO.class);}catch(Exception e) {throw new GenericError("Don't contain top level elements");}
 		return true;}else {return false;}
 	}

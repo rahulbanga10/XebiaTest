@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebElementHelper {
 	
-	private static final int ELEMENT_WAIT_TIME=50;
-	private static final int SCRIPT_WAIT_TIME=100;
+	private static final int ELEMENT_WAIT_TIME=10;
+	private static final int SCRIPT_WAIT_TIME=15;
 	
 	public static WebElement waitOnElement(WebDriver webDriver,By locator) {
 		return new WebDriverWait(webDriver, ELEMENT_WAIT_TIME).pollingEvery(5,TimeUnit.MILLISECONDS)
